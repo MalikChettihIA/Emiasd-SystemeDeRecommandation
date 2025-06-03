@@ -1,1 +1,7 @@
 .DS_Store
+4.Projets/data/articles.csv
+4.Projets/data/customers.csv
+4.Projets/data/transactions_train.csv
+4.Projets/data/zip/articles.csv.zip
+4.Projets/data/zip/customers.csv.zip
+4.Projets/data/zip/transactions_train.csv.zip
