@@ -31,3 +31,35 @@
 4.Td/movielens/ml-100k/ub.test
 *.csv
 *.zip
+7.Others/HM-Recommender-System-App-main/app.py
+7.Others/HM-Recommender-System-App-main/EDA and Data Cleaning.ipynb
+7.Others/HM-Recommender-System-App-main/environment.yml
+7.Others/HM-Recommender-System-App-main/FinalDataPreparation.ipynb
+7.Others/HM-Recommender-System-App-main/H&M-CollaborativeFilteringModeling.ipynb
+7.Others/HM-Recommender-System-App-main/H&M-ContentBasedFilteringModeling.ipynb
+7.Others/HM-Recommender-System-App-main/Images/articles_desc.png
+7.Others/HM-Recommender-System-App-main/Images/CB_example.png
+7.Others/HM-Recommender-System-App-main/Images/CF_example.png
+7.Others/HM-Recommender-System-App-main/Images/h&mBanner.jpeg
+7.Others/HM-Recommender-System-App-main/Images/Model_bar.png
+7.Others/HM-Recommender-System-App-main/Model/collaborative_model.sav
+7.Others/HM-Recommender-System-App-main/Presentation H&M.pdf
+7.Others/HM-Recommender-System-App-main/README.md
+7.Others/HM-Recommender-System-App-main/streamlit.yml
+6.Projects/docs/~$cSys Project.docx
+6.Projects/data/sampled/50K/sampling_metadata.json
+6.Projects/data/sampled/10K/sampling_metadata.json
+6.Projects/data/sampled/100K/sampling_metadata.json
+6.Projects/data/processed/50K/user_item_matrix.npz
+6.Projects/data/processed/50K/user_id_mapping.pkl
+6.Projects/data/processed/50K/user_features_matrix.npz
+6.Projects/data/processed/50K/user_features_mapping.pkl
+6.Projects/data/processed/50K/user_feature_columns.json
+6.Projects/data/processed/50K/preprocessing_metadata.json
+6.Projects/data/processed/50K/lightfm_dataset.pkl
+6.Projects/data/processed/50K/item_id_mapping.pkl
+6.Projects/data/processed/50K/item_features_matrix.npz
+6.Projects/data/processed/50K/item_features_mapping.pkl
+6.Projects/data/processed/50K/item_feature_columns.json
+6.Projects/data/processed/50K/all_user_features.json
+6.Projects/data/processed/50K/all_item_features.json
