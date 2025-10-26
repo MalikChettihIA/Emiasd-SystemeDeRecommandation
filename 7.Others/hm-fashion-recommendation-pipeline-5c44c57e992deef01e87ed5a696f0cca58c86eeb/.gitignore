@@ -1,0 +1,14 @@
+# Données
+data/*.csv
+*.csv
+*.parquet
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Outputs lourds  
+outputs/models/*.pkl

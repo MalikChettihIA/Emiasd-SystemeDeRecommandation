@@ -1,4 +1,9 @@
-# Projet Final : Construction d'un Système de Recommandation avec LightFM
+# 🛍️ H&M Fashion Recommendation Pipeline
+
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![LightFM](https://img.shields.io/badge/LightFM-compatible-green.svg)](https://making.lyst.com/lightfm/docs/home.html)
+
+Pipeline complet de système de recommandation pour H&M utilisant LightFM avec optimisation des hyperparamètres et modèle hybride collaboratif + contenu.
 
 ## 📋 Vue d'ensemble
 
