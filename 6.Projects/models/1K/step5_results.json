@@ -1,0 +1,62 @@
+{
+  "timestamp": "2025-10-31 09:04:17",
+  "sample_size": "1K",
+  "split_strategy": "temporal",
+  "k": 10,
+  "best_configuration": {
+    "loss": "logistic",
+    "no_components": 30,
+    "learning_rate": 0.01,
+    "epochs": 5
+  },
+  "best_performance": {
+    "test_precision_at_k": 0.0005000000237487257,
+    "test_recall_at_k": 0.005,
+    "test_auc": 0.12474663555622101
+  },
+  "exp1_loss_functions": {
+    "warp": {
+      "test_precision": 0.0005000000237487257,
+      "test_auc": 0.12474663555622101
+    },
+    "bpr": {
+      "test_precision": 0.0,
+      "test_auc": 0.4754912257194519
+    },
+    "logistic": {
+      "test_precision": 0.0010000000474974513,
+      "test_auc": 0.12091003358364105
+    }
+  },
+  "exp2_no_components": {
+    "30": {
+      "test_precision": 0.0005000000237487257,
+      "test_auc": 0.12474663555622101,
+      "total_time": 0.4488403797149658
+    },
+    "50": {
+      "test_precision": 0.0,
+      "test_auc": 0.12502068281173706,
+      "total_time": 0.6030027866363525
+    },
+    "100": {
+      "test_precision": 0.0,
+      "test_auc": 0.12964323163032532,
+      "total_time": 1.0351228713989258
+    }
+  },
+  "exp3_learning_rate": {
+    "0.01": {
+      "test_precision": 0.0,
+      "test_auc": 0.12478800117969513
+    },
+    "0.05": {
+      "test_precision": 0.0,
+      "test_auc": 0.12502068281173706
+    },
+    "0.1": {
+      "test_precision": 0.0,
+      "test_auc": 0.12277662009000778
+    }
+  }
+}

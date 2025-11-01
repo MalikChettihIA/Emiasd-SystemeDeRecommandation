@@ -1,0 +1,86 @@
+{
+  "timestamp": "2025-10-30 22:02:54",
+  "sample_size": "50K",
+  "split_strategy": "temporal",
+  "features_used": [
+    "product_type_name",
+    "colour_group_name",
+    "product_group_name",
+    "section_name",
+    "garment_group_name"
+  ],
+  "cf_pure_vs_hybrid": {
+    "5": {
+      "cf_pure": {
+        "precision": 0.0007328243809752166,
+        "recall": 0.00366412213740458,
+        "auc": 0.3193318843841553
+      },
+      "hybrid": {
+        "precision": 0.0005903308046981692,
+        "recall": 0.002951653944020356,
+        "auc": 0.334970086812973
+      },
+      "improvement": {
+        "precision": -0.0001424935762770474,
+        "recall": -0.000712468193384224,
+        "auc": 0.01563820242881775
+      }
+    },
+    "10": {
+      "cf_pure": {
+        "precision": 0.0007430025725625455,
+        "recall": 0.007379134860050891,
+        "auc": 0.3193318843841553
+      },
+      "hybrid": {
+        "precision": 0.0007430025725625455,
+        "recall": 0.007379134860050891,
+        "auc": 0.334970086812973
+      },
+      "improvement": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "auc": 0.01563820242881775
+      }
+    },
+    "20": {
+      "cf_pure": {
+        "precision": 0.00048346054973080754,
+        "recall": 0.009618320610687023,
+        "auc": 0.3193318843841553
+      },
+      "hybrid": {
+        "precision": 0.0005089058540761471,
+        "recall": 0.010076335877862596,
+        "auc": 0.334970086812973
+      },
+      "improvement": {
+        "precision": 2.5445304345339537e-05,
+        "recall": 0.00045801526717557245,
+        "auc": 0.01563820242881775
+      }
+    }
+  },
+  "coldstart_analysis": {
+    "cold_start": {
+      "n_items": 4140,
+      "cf_pure_precision": 0.0,
+      "hybrid_precision": 0.0,
+      "improvement": 0.0
+    },
+    "moyens": {
+      "n_items": 11823,
+      "cf_pure_precision": 0.0,
+      "hybrid_precision": 0.0,
+      "improvement": 0.0
+    },
+    "populaires": {
+      "n_items": 8253,
+      "cf_pure_precision": 0.0029662740416824818,
+      "hybrid_precision": 0.0029662740416824818,
+      "improvement": 0.0
+    }
+  },
+  "ablation": {}
+}

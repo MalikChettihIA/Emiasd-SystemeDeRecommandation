@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-31 09:15:17",
+  "sample_size": "1K",
+  "split_strategy": "temporal",
+  "k": 10,
+  "best_method": "Random Search",
+  "best_configuration": {
+    "no_components": 30.0,
+    "learning_rate": 0.06783294556073592,
+    "item_alpha": 0.0005366756691961284,
+    "user_alpha": 0.0008714065210034274,
+    "loss": "warp",
+    "epochs": 10.0
+  },
+  "best_performance": {
+    "test_precision_at_k": 0.0010000000474974513,
+    "test_recall_at_k": 0.01,
+    "test_auc": 0.11591003090143204,
+    "training_time": 0.047537803649902344
+  },
+  "grid_search": {
+    "n_configs": 96,
+    "best_precision": 0.0010000000474974513,
+    "total_time": 7.228914499282837
+  },
+  "random_search": {
+    "n_configs": 50,
+    "best_precision": 0.0010000000474974513,
+    "total_time": 3.8688292503356934
+  }
+}

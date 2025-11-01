@@ -1,0 +1,104 @@
+{
+  "timestamp": "2025-11-01 16:35:50",
+  "sample_size": "10K",
+  "split_strategy": "temporal",
+  "features_used": [
+    "product_type_name",
+    "product_group_name",
+    "department_name",
+    "colour_group_name",
+    "graphical_appearance_name",
+    "perceived_colour_value_name",
+    "perceived_colour_master_name",
+    "index_group_name",
+    "section_name",
+    "garment_group_name",
+    "age_group",
+    "club_member_status",
+    "fashion_news_frequency"
+  ],
+  "cf_pure_vs_hybrid": {
+    "5": {
+      "cf_pure": {
+        "precision": 0.00023125208099372685,
+        "recall": 8.21491579667992e-05,
+        "auc": 0.502512514591217
+      },
+      "hybrid": {
+        "precision": 0.0033366370480507612,
+        "recall": 0.0019630640649972676,
+        "auc": 0.6850227117538452
+      },
+      "improvement": {
+        "precision": 0.003105384996160865,
+        "recall": 0.0018809149070304683,
+        "auc": 0.18251019716262817
+      }
+    },
+    "10": {
+      "cf_pure": {
+        "precision": 0.00026428807177580893,
+        "recall": 0.00023281070797389448,
+        "auc": 0.502512514591217
+      },
+      "hybrid": {
+        "precision": 0.0022629667073488235,
+        "recall": 0.0026246351100583164,
+        "auc": 0.6850227117538452
+      },
+      "improvement": {
+        "precision": 0.0019986785482615232,
+        "recall": 0.002391824402084422,
+        "auc": 0.18251019716262817
+      }
+    },
+    "20": {
+      "cf_pure": {
+        "precision": 0.0001982160611078143,
+        "recall": 0.0003284501162576061,
+        "auc": 0.502512514591217
+      },
+      "hybrid": {
+        "precision": 0.001759167411364615,
+        "recall": 0.003873213913725677,
+        "auc": 0.6850227117538452
+      },
+      "improvement": {
+        "precision": 0.0015609513502568007,
+        "recall": 0.003544763797468071,
+        "auc": 0.18251019716262817
+      }
+    },
+    "50": {
+      "cf_pure": {
+        "precision": 0.0001585728459758684,
+        "recall": 0.0009144390252579856,
+        "auc": 0.502512514591217
+      },
+      "hybrid": {
+        "precision": 0.001344565418548882,
+        "recall": 0.008005476039037458,
+        "auc": 0.6850227117538452
+      },
+      "improvement": {
+        "precision": 0.0011859926162287593,
+        "recall": 0.007091037013779473,
+        "auc": 0.18251019716262817
+      }
+    }
+  },
+  "coldstart_analysis": {
+    "cold_start": {
+      "n_items": 7749,
+      "cf_pure_precision": 0.0,
+      "hybrid_precision": 0.0,
+      "improvement": 0.0
+    },
+    "moyens": {
+      "n_items": 29643,
+      "cf_pure_precision": 0.0,
+      "hybrid_precision": 0.0,
+      "improvement": 0.0
+    }
+  }
+}
