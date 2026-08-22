@@ -1,6 +1,6 @@
 # Systèmes de Recommandation - EMIASD
 
-Ce repository contient les supports de cours, exercices pratiques et projets pour le module **Systèmes de Recommandation** du programme EMIASD.
+Ce repository contient les supports de cours, exercices pratiques et projets pour le module **Systèmes de Recommandation** du **[Master Exécutif EMIASD](https://executive-education.dauphine.psl.eu/formations/executive-master-diplome-universite/ia-science-donnees) (Intelligence Artificielle et Sciences des Données) de l'Université Paris-Dauphine \| PSL**.
 
 ## 📚 Structure du Repository
 
