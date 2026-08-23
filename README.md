@@ -1,4 +1,8 @@
-# Recommender Systems - EMIASD
+# 🛍️ Emiasd - Recommender Systems
+
+![EMIASD Dauphine](https://img.shields.io/badge/-EMIASD%20Dauphine-000000?style=flat) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white) ![LightFM](https://img.shields.io/badge/-LightFM-blue?style=flat) ![Collaborative Filtering](https://img.shields.io/badge/-Collaborative%20Filtering-blue?style=flat) ![Matrix Factorization](https://img.shields.io/badge/-Matrix%20Factorization-blue?style=flat) ![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
+
+---
 
 This repository contains the course material, labs, and projects for the **Recommender Systems** module of the **[EMIASD Executive Master](https://executive-education.dauphine.psl.eu/formations/executive-master-diplome-universite/ia-science-donnees)** (Artificial Intelligence & Data Science, Université Paris-Dauphine \| PSL).
 
