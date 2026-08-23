@@ -1,53 +1,53 @@
-# Systèmes de Recommandation - EMIASD
+# Recommender Systems - EMIASD
 
-Ce repository contient les supports de cours, exercices pratiques et projets pour le module **Systèmes de Recommandation** du **[Master Exécutif EMIASD](https://executive-education.dauphine.psl.eu/formations/executive-master-diplome-universite/ia-science-donnees) (Intelligence Artificielle et Sciences des Données) de l'Université Paris-Dauphine \| PSL**.
+This repository contains the course material, labs, and projects for the **Recommender Systems** module of the **[EMIASD Executive Master](https://executive-education.dauphine.psl.eu/formations/executive-master-diplome-universite/ia-science-donnees)** (Artificial Intelligence & Data Science, Université Paris-Dauphine \| PSL).
 
-## 📚 Structure du Repository
+## 📚 Repository Structure
 
 ```
-├── 1.Cours/              # Supports de cours (PDFs)
-├── 2.Articles/           # Articles de recherche
-├── 3.Notes/              # Notes de cours et mind maps
-├── 4.Td/                 # Travaux dirigés (notebooks Jupyter)
-├── 5.Documentations/     # Livres de référence et syllabus
-└── 6.Projects/           # Projets finaux
+├── 1.Cours/              # Course slides (PDFs)
+├── 2.Articles/           # Research papers
+├── 3.Notes/              # Course notes and mind maps
+├── 4.Td/                 # Labs (Jupyter notebooks)
+├── 5.Documentations/     # Reference books and syllabus
+└── 6.Projects/           # Final project
 ```
 
-## 🎯 Objectifs Pédagogiques
+## 🎯 Learning Objectives
 
-Ce cours couvre les concepts fondamentaux et avancés des systèmes de recommandation :
+The course covers the fundamental and advanced concepts of recommender systems:
 
-1. **Introduction aux Systèmes de Recommandation**
-2. **Apprentissage par Renforcement pour RecSys**
-3. **Deep Learning pour RecSys**
-4. **Recommandation de Points d'Intérêt (POI)**
-5. **Architecture des Systèmes de Recommandation**
-6. **Systèmes de Recommandation basés sur les LLM**
+1. **Introduction to Recommender Systems**
+2. **Reinforcement Learning for RecSys**
+3. **Deep Learning for RecSys**
+4. **Point-of-Interest (POI) Recommendation**
+5. **Recommender System Architecture**
+6. **LLM-based Recommender Systems**
 
-## 📊 Datasets Utilisés
+## 📊 Datasets Used
 
-### MovieLens 100K (Travaux Dirigés)
-- **943** utilisateurs
-- **1,682** films
-- **100,000** évaluations
-- Utilisé pour l'apprentissage et les exercices pratiques
+### MovieLens 100K (Labs)
+- **943** users
+- **1,682** movies
+- **100,000** ratings
+- Used for learning and hands-on exercises
 
-### H&M Fashion Dataset (Projet Final)
-- **1.3M** clients
+### H&M Fashion Dataset (Final Project)
+- **1.3M** customers
 - **105,000** articles
 - **31M** transactions
-- Dataset de production pour le projet final
+- Production-scale dataset for the final project
 
-## 🛠️ Technologies et Bibliothèques
+## 🛠️ Technologies & Libraries
 
-Les notebooks utilisent principalement :
+The notebooks mainly use:
 
 ```python
-# Manipulation de données
+# Data manipulation
 import pandas as pd
 import numpy as np
 
-# Visualisation
+# Visualization
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -57,109 +57,109 @@ from sklearn.metrics import precision_score, recall_score
 from scipy.sparse.linalg import svds
 ```
 
-## 📓 Travaux Dirigés (4.Td/)
+## 📓 Labs (4.Td/)
 
-Les notebooks implémentent et comparent **quatre approches** de recommandation :
+The notebooks implement and compare **four recommendation approaches**:
 
-### 1. Recommandation par Popularité
-- Score pondéré : `0.7 × note_moyenne + 0.3 × log(nb_évaluations)`
-- Bon baseline, gère le cold start
+### 1. Popularity-Based Recommendation
+- Weighted score: `0.7 × average_rating + 0.3 × log(num_ratings)`
+- Good baseline, handles cold start
 
-### 2. Filtrage Basé sur le Contenu
-- Utilise les genres de films (18 features binaires) + année de sortie normalisée
-- Similarité cosinus entre vecteurs de features
-- Recommandations explicables
+### 2. Content-Based Filtering
+- Uses movie genres (18 binary features) + normalized release year
+- Cosine similarity between feature vectors
+- Explainable recommendations
 
-### 3. Filtrage Collaboratif (User-Based)
-- Matrice utilisateurs-items
-- Similarité cosinus entre utilisateurs
-- Recommande les items appréciés par des utilisateurs similaires (note ≥ 4)
+### 3. Collaborative Filtering (User-Based)
+- User-item matrix
+- Cosine similarity between users
+- Recommends items liked by similar users (rating ≥ 4)
 
-### 4. Factorisation Matricielle (SVD)
-- `scipy.svds()` avec 50 facteurs latents
-- Normalisation par moyenne utilisateur
-- Meilleure personnalisation
+### 4. Matrix Factorization (SVD)
+- `scipy.svds()` with 50 latent factors
+- Normalized by user mean
+- Better personalization
 
-## 📈 Métriques d'Évaluation
+## 📈 Evaluation Metrics
 
-Les implémentations incluent :
+The implementations include:
 - **Precision@K, Recall@K, F1@K**
-- **Coverage** (diversité du catalogue)
-- Split train/test (80/20)
-- Échantillonnage de 100 utilisateurs test pour la rapidité
+- **Coverage** (catalog diversity)
+- Train/test split (80/20)
+- 100-user test sample for speed
 
-## 🚀 Démarrage Rapide
+## 🚀 Quick Start
 
-### Installation des dépendances
+### Install dependencies
 
 ```bash
 pip install jupyter pandas numpy matplotlib seaborn scikit-learn scipy
 ```
 
-### Lancer les notebooks
+### Run the notebooks
 
 ```bash
-# Option 1 : Jupyter Notebook
+# Option 1: Jupyter Notebook
 jupyter notebook
 
-# Option 2 : Jupyter Lab
+# Option 2: Jupyter Lab
 jupyter lab
 ```
 
-### Exécuter un exercice
+### Run a lab
 
-1. Naviguer vers `4.Td/`
-2. Ouvrir `Lab_using_MovieLens.ipynb`
-3. Le dataset MovieLens se télécharge automatiquement au premier lancement
+1. Navigate to `4.Td/`
+2. Open `Lab_using_MovieLens.ipynb`
+3. The MovieLens dataset downloads automatically on first run
 
-## 📁 Fichiers Importants
+## 📁 Key Files
 
-### Travaux Dirigés
-- `Lab_using_MovieLens.ipynb` - Version de travail principale
-- `Lab_using_MovieLens_solution.ipynb` - Solution complète avec implémentations
-- `Lab_using_MovieLens_original.ipynb` - Template de départ original
+### Labs
+- `Lab_using_MovieLens.ipynb` - Main working version
+- `Lab_using_MovieLens_solution.ipynb` - Full solution with implementations
+- `Lab_using_MovieLens_original.ipynb` - Original starter template
 
-### Projet Final
-- `exploratory_data_analysis.ipynb` - Analyse exploratoire du dataset H&M
-- `helpers.py` - Fonctions utilitaires
-- `data/` - Fichiers CSV volumineux (>3GB, exclus de git)
+### ⭐ Final Project — H&M Fashion Recommender System (LightFM)
 
-## ⚠️ Notes Importantes
+*With Henri Balamou.* A hybrid recommender system (Collaborative Filtering + item/user features) on the H&M dataset (31.7M transactions, 99.98% sparsity). Key result: the hybrid model doesn't move the global metrics, but improves Precision@5 by **+109%** on cold-start users (496 users with no purchase history) thanks to demographic features.
 
-- **MovieLens** : Le dataset se télécharge automatiquement lors de la première exécution
-- **H&M Dataset** : Fichiers volumineux (3.7GB total) - utiliser l'échantillonnage pour le développement
-- **SVD** : Peut prendre 30-60 secondes pour s'entraîner sur le dataset MovieLens complet
-- Les implémentations privilégient la **clarté pédagogique** plutôt que la performance en production
+See **[`6.Projects/README.md`](6.Projects/README.md)** for the full write-up: the 9-step pipeline, detailed results, a matrix-alignment bug we hit and fixed, limitations, and improvement ideas.
 
-## 📖 Stratégie d'Échantillonnage
+## ⚠️ Important Notes
 
-Pour travailler avec le dataset H&M, une stratégie d'échantillonnage est recommandée :
+- **MovieLens**: the dataset downloads automatically on first run
+- **H&M Dataset**: large files (3.7GB total) — use sampling for development
+- **SVD**: can take 30-60 seconds to train on the full MovieLens dataset
+- The implementations prioritize **pedagogical clarity** over production performance
+
+## 📖 Sampling Strategy
+
+To work with the H&M dataset, a sampling strategy is recommended:
 
 ```python
-def enchantillonner(df, column_name, k):
+def sample(df, column_name, k):
     """
-    Garde uniquement les items/utilisateurs avec >= k transactions
+    Keep only items/users with >= k transactions
     """
     column_counts = df[column_name].value_counts()
     columns_valid = column_counts[column_counts >= k].index
     return df[df[column_name].isin(columns_valid)]
 
-# Seuils recommandés :
-# k_article = 1000 (réduit à ~17M transactions)
-# k_customer = 100 (réduit à ~9.4M transactions)
+# Recommended thresholds:
+# k_article = 1000 (reduces to ~17M transactions)
+# k_customer = 100 (reduces to ~9.4M transactions)
 ```
 
-## 🎓 Ressources
+## 🎓 Resources
 
-- **Cours** : Voir le répertoire `1.Cours/` pour les supports PDF
-- **Documentations** : Livres de référence dans `5.Documentations/`
-- **Articles** : Papers de recherche dans `2.Articles/`
+- **Course**: see the `1.Cours/` folder for the PDF slides
+- **Documentation**: reference books in `5.Documentations/`
+- **Articles**: research papers in `2.Articles/`
 
-## 📝 Licence
+## 📝 License
 
-Matériel pédagogique pour le programme EMIASD.
+Educational material for the EMIASD program.
 
 ---
 
-**Auteur** : Programme EMIASD
-**Dernière mise à jour** : Octobre 2024
+**Author**: Malik Chettih (final project co-authored with Henri Balamou)
